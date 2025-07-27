@@ -108,6 +108,23 @@
     text-align: center !important;
     margin-top: 30px;
 }
+    .pdf-container {
+  position: relative;
+  width: 100%;
+  padding-top: 130%; /* Adjust for aspect ratio */
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.pdf-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
   </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" tabindex="0">
@@ -299,23 +316,25 @@
     </div>
   </section>
 
-  <section class="section" id="certifications">
-    <div class="container">
-      <h2 class="section-title text-center">📜 Certifications</h2>
-      <div class="card p-4 col-md-12 mx-auto" data-aos="fade-up">
-        <h5>Django Essential Training </h5>
-        <p>Offered by: LinkedIn Learning  </p>
-<p><embed src="index/CertificateOfCompletion_Django Essential Training.pdf" type="application/pdf" width="100%" height="600px"></p>
-        
+<section class="section" id="certifications">
+  <div class="container">
+    <h2 class="section-title text-center">📜 Certifications</h2>
+
+    <div class="card p-4 col-md-12 mx-auto" data-aos="fade-up">
+      <h5>Django Essential Training</h5>
+      <p>Offered by: LinkedIn Learning</p>
+      <div class="pdf-container">
+        <iframe src="index/CertificateOfCompletion_Django Essential Training.pdf" frameborder="0"></iframe>
       </div>
     </div>
 
-      <div class="card p-4 col-md-12 mx-auto" data-aos="fade-up">
-        <h5>Data Visualization with Power BI</h5>
-        <p>Offered by: Udemy</p>
-      </div>
+    <div class="card p-4 col-md-12 mx-auto" data-aos="fade-up">
+      <h5>Data Visualization with Power BI</h5>
+      <p>Offered by: Udemy</p>
     </div>
-  </section>
+  </div>
+</section>
+
 
 
   
